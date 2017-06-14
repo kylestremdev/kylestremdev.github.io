@@ -57,7 +57,6 @@ function Graphics (game) {
   }
 
   this.getGameBoard = function () {
-    console.log(this.game.gameLogic.gameBoard);
     this.gameBoard = this.game.gameLogic.gameBoard;
     document.getElementById('board').style.width = (this.gameBoard.width * 20) + "px";
     document.getElementById('board').style.height = (this.gameBoard.height * 20) + "px";

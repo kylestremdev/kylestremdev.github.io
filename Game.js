@@ -13,17 +13,14 @@ function Game () {
 
   this.programStart = function () {
     eventBus.newEvent("ProgramStart");
-    console.log("Program Start");
   }
 
   this.gameStart = function () {
     eventBus.newEvent("GameStart");
-    console.log("Game Start");
   }
 
   this.gameBoardCreated = function () {
     eventBus.newEvent("GameBoardCreated");
-    console.log("Game Board Created");
   }
 
   this.gameBoardDrawn = function () {
@@ -32,7 +29,6 @@ function Game () {
     self.gameLoop = setInterval(function () {
       self.updateFrame();
     }, 150);
-    console.log("Game Board Drawn");
   }
 
   this.gameEnd = function () {
@@ -41,22 +37,18 @@ function Game () {
     clearInterval(this.gameLoop);
     this.state = "Ending Game";
 
-    console.log("Game End");
   }
 
   this.gameLogicEnded = function () {
     eventBus.newEvent("GameLogicEnded");
-    console.log("Game Logic Ended");
   }
 
   this.updateFrame = function () {
     eventBus.newEvent("UpdateFrame");
-    console.log("Update Frame");
   }
 
   this.updateFrameBoardCreated = function () {
     eventBus.newEvent("UpdateFrameBoardCreated");
-    console.log("Update Frame Board Created");
   }
 
   this.upArrowPressed = function () {
@@ -66,7 +58,6 @@ function Game () {
     }
 
     eventBus.newEvent("UpArrowPressed");
-    console.log("Up Arrow Pressed");
   }
 
   this.downArrowPressed = function () {
@@ -76,7 +67,6 @@ function Game () {
     }
 
     eventBus.newEvent("DownArrowPressed");
-    console.log("Down Arrow Pressed");
   }
 
   this.leftArrowPressed = function () {
@@ -86,7 +76,6 @@ function Game () {
     }
 
     eventBus.newEvent("LeftArrowPressed");
-    console.log("Left Arrow Pressed");
   }
 
   this.rightArrowPressed = function () {
@@ -96,7 +85,6 @@ function Game () {
     }
 
     eventBus.newEvent("RightArrowPressed");
-    console.log("Right Arrow Pressed");
   }
 
   this.programStart();
