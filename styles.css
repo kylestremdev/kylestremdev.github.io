@@ -1,0 +1,79 @@
+html, body {
+  height: 98%;
+  width: 99%;
+  background-color: #222;
+}
+
+div {
+  line-height: 0;
+}
+
+#wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+#content {
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  background-color: #b782ed;
+  border: 40px solid #591b99;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+
+}
+
+#startButton {
+  background-color: white;
+  color: green;
+  height: 20%;
+  width: 40%;
+  font-weight: bold;
+  font-size: 2em;
+  border-radius: 20px;
+  border: 10px solid green;
+  margin: auto;
+  display: none;
+}
+
+#game {
+  width: 100%;
+  display: none;
+}
+
+#board {
+  background-color: #111;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: none;
+}
+
+#endGame {
+  margin: auto;
+  width: 100%;
+  display: none;
+}
+
+#score, #gameScore {
+  color: red;
+  font-weight: bold;
+  font-size: 1.75em;
+}
+
+#replay {
+  background-color: white;
+  color: green;
+  height: 20%;
+  width: 40%;
+  font-weight: bold;
+  font-size: 2em;
+  border-radius: 20px;
+  border: 10px solid green;
+  margin: auto;
+}
