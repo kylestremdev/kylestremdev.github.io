@@ -83,7 +83,6 @@ function GameLogic (game) {
 
   this.getNewGameBoard = function () {
     this.gameBoard = new Board(20, 20);
-    console.log(this.gameBoard);
   }
 
   this.populateNewGameBoard = function () {
